@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 
 import Header from './Components/Header.js'
 import PokemonContainer from './Components/PokemonContainer.js'
