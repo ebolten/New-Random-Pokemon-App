@@ -7,18 +7,30 @@ class PokemonContainer extends React.Component {
         if (this.props.renderPoke) {
             return(
                 <div>
-                    <div className="card">
-                        <h1 id='name'> {this.props.pokeObj['name'].toUpperCase()} </h1>
-                        <img id='img-id' alt="front default Pokemon" src={this.props.pokeObj['sprites']['front_default']} />
+                    <div class="hidden-sm hidden-xs">
+                        <div className="card">
+                            <h1 id='name'> {this.props.pokeObj['name'].toUpperCase()} </h1>
+                            <img id='img-id' alt="front default Pokemon" src={this.props.pokeObj['sprites']['front_default']} />
 
-                        <div className="container">
+                            <div className="container">
+                            </div>
                         </div>
-
+                        <br></br>
+                        <button id='buttonTwo' onClick={this.props.handleBtn}> Click Here for Another Pokemon </button>
                     </div>
-                    <br></br>
-                    <button id='buttonTwo' onClick={this.props.handleBtn}> Click Here for Another Pokemon </button>
-                </div>
+                    <div class="visible-sm visible-xs">
+                        <div className="card-small">
+                            <h1 id='name'> {this.props.pokeObj['name'].toUpperCase()} </h1>
+                            <img id='img-id' alt="front default Pokemon" src={this.props.pokeObj['sprites']['front_default']} />
 
+                            <div className="container">
+                            </div>
+
+                        </div>
+                        <br></br>
+                        <button id='buttonTwo' onClick={this.props.handleBtn}> Click Here for Another Pokemon </button>
+                    </div>
+                </div>
             )} else {
                 return(
                     <div>
