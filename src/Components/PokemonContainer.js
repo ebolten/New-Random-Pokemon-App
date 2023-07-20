@@ -9,7 +9,7 @@ class PokemonContainer extends React.Component {
                 <div>
                     <div className="card">
                         <h1 id='name'> {this.props.pokeObj['name'].toUpperCase()} </h1>
-                        <img id='img-id' src={this.props.pokeObj['sprites']['front_default']} />
+                        <img id='img-id' alt="front default Pokemon" src={this.props.pokeObj['sprites']['front_default']} />
 
                         <div className="container">
                         </div>
@@ -30,4 +30,3 @@ class PokemonContainer extends React.Component {
     }
 }
 export default PokemonContainer
-
